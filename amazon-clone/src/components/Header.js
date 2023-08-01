@@ -5,12 +5,12 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { BiSolidCart } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className="header">
       <div className="header-search">
         <Link to="/">
-          <img className="logo" src={logo} alt="logo-image" loading="lazy" />
+          <img className="logo" src={logo} alt="logo" loading="lazy" />
         </Link>
 
         <div className="search-box flex">
@@ -47,3 +47,4 @@ export const Header = () => {
     </div>
   );
 };
+export default Header;
