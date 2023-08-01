@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/sass/_login.scss";
 import logo from "../images/login-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { useAuth } from "../context/GlobalState";
@@ -10,12 +10,21 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { user } = useAuth();
+  const navigate = useNavigate();
+
   const register = (e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        if (auth) {
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
-  console.log(user);
   return (
     <div className="login">
       <Link to="/">
