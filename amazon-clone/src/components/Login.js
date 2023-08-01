@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "../styles/sass/_login.scss";
 import logo from "../images/login-logo.png";
 import { Link, useNavigate } from "react-router-dom";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { auth } from "../firebase";
 import { useAuth } from "../context/GlobalState";
 
@@ -15,6 +18,19 @@ const Login = () => {
   const register = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        if (auth) {
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
+  const signIn = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
       .then((auth) => {
         if (auth) {
           navigate("/");
@@ -52,7 +68,7 @@ const Login = () => {
               setPassword(e.target.value);
             }}
           />
-          <button className="login-signInBtn" type="submit">
+          <button className="login-signInBtn" type="submit" onClick={signIn}>
             Sign in
           </button>
 
