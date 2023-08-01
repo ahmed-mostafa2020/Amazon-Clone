@@ -1,3 +1,109 @@
+@import "_colors";
+@import "_vars";
+
 .header {
-  color: red;
+  background-color: $sec-color;
+  color: #fff;
+  padding: 10px;
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  .header-search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: -webkit-fill-available;
+    max-width: 85%;
+    @media (max-width: 1400px) {
+      max-width: 82%;
+    }
+    @media (max-width: 1200px) {
+      max-width: 80%;
+    }
+    @media (max-width: 992px) {
+      max-width: 77%;
+    }
+    @media (max-width: 776px) {
+      max-width: 68%;
+    }
+    @media (max-width: $small) {
+      max-width: 58%;
+    }
+    @media (max-width: 490px) {
+      max-width: 50%;
+    }
+
+    a {
+      .logo {
+        width: 80px;
+        height: 100%;
+        vertical-align: bottom;
+        @media (max-width: $small) {
+          width: 50px;
+        }
+      }
+    }
+
+    .search-box {
+      width: inherit;
+      .search-input {
+        height: 30px;
+        padding: 0px 10px;
+        border-radius: none;
+        outline: none;
+        width: inherit;
+        border: 1px solid $sec-color;
+        border-right: none;
+        @media (max-width: $small) {
+          height: 25px;
+        }
+      }
+      .search-icon {
+        font-size: 17px;
+        font-weight: 600;
+        width: 30px;
+        height: 28px;
+        color: $sec-color;
+        background-color: $main-color;
+        cursor: pointer;
+        @media (max-width: $small) {
+          width: 30px;
+          height: 23px;
+        }
+      }
+    }
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .sign-in,
+    .order,
+    .prime {
+      color: #fff;
+      p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-size: 8px;
+        span {
+          font-size: 10px;
+          font-weight: 800;
+        }
+      }
+    }
+    .checkout {
+      color: #fff;
+      font-size: 22px;
+      span {
+        font-size: 13px;
+        vertical-align: text-top;
+      }
+    }
+  }
 }
