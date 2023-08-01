@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Project Data
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: "AIzaSyDHORltlGQsqFUaeQ7-x7ZSVoFGBi_gVmE",
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   projectId: process.env.FIREBASE_PROJECT_ID,
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
