@@ -15,17 +15,19 @@
       padding: 20px;
       margin: 20px;
       border-bottom: 1px solid lightgray;
+
+      .payment-title {
+        flex: 0.2;
+      }
+
       .payment-address,
       .payment-items {
         flex: 0.8;
       }
 
-      h3 {
-        flex: 0.2;
-      }
-
       .payment-details {
         flex: 0.8;
+
         form {
           .payment-priceContainer {
             h3 {

@@ -51,7 +51,9 @@ const Payment = () => {
 
         {/* Payment method*/}
         <div className="payment-section">
-          <h3>Payment Method</h3>
+          <div className="payment-title">
+            <h3>Payment Method</h3>
+          </div>
 
           <div className="payment-details">
             <form>
