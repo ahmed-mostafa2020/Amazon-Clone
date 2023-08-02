@@ -7,12 +7,10 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../firebase";
-import { useAuth } from "../context/GlobalState";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user } = useAuth();
   const navigate = useNavigate();
 
   const register = (e) => {

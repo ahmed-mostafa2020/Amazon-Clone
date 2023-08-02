@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Login from "./components/Login";
 import { auth } from "./firebase";
 import { useAuth } from "./context/GlobalState";
+import Home from "./components/Home";
 
 const App = () => {
   const { dispatch } = useAuth();
@@ -31,6 +32,7 @@ const App = () => {
           element={
             <>
               <Header />
+              <Home />
             </>
           }
         />

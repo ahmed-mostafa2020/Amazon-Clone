@@ -1,3 +1,4 @@
+// complex state data so used useReducer
 export const initialState = {
   basket: [],
   user: null,

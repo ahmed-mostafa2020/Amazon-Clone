@@ -3,6 +3,7 @@ import AppReducer, { initialState } from "./AppReducer";
 
 const GlobalContext = createContext();
 
+// Func will be called to fetch any data from passed values by construction
 export const useAuth = () => {
   return useContext(GlobalContext);
 };
