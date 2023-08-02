@@ -10,7 +10,12 @@ const AppReducer = (state = initialState, action) => {
     case "SET_USER":
       return {
         ...state,
-        user: action.user,
+        user: action.userData,
+      };
+    case "ADD_TO_BASKET":
+      return {
+        ...state,
+        basket: [...state.basket, action.item],
       };
     default:
       return state;

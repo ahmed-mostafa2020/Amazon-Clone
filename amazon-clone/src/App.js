@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import { auth } from "./firebase";
 import { useAuth } from "./context/GlobalState";
 import Home from "./components/Home";
+import Checkout from "./components/Checkout";
 
 const App = () => {
   const { dispatch } = useAuth();
@@ -14,12 +15,12 @@ const App = () => {
       if (authUser) {
         dispatch({
           type: "SET_USER",
-          user: authUser,
+          userData: authUser,
         });
       } else {
         dispatch({
           type: "SET_USER",
-          user: null,
+          userData: null,
         });
       }
     });
@@ -38,6 +39,15 @@ const App = () => {
         />
 
         <Route path="/login" element={<Login />} />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <Header />
+              <Checkout />
+            </>
+          }
+        />
 
         <Route path="*" element={<h1>PageNot Found</h1>} />
       </Routes>
