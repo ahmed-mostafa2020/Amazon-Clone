@@ -10,7 +10,7 @@ const Checkout = () => {
   return (
     <div className="checkout">
       <div className="checkout-left">
-        <img src={checkoutImg} alt="advertising" />
+        <img className="checkout-ad" src={checkoutImg} alt="advertising" />
 
         <h3>Hello, {user?.email}</h3>
         <h2 className="checkout-title">Your shopping Basket</h2>
@@ -27,7 +27,7 @@ const Checkout = () => {
             />
           ))
         ) : (
-          <p>
+          <p className="empty-items-message">
             You have no items in your basket.To buy one or more items,click"Add
             to basket".
           </p>

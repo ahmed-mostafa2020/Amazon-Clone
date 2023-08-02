@@ -1,8 +1,18 @@
 import React from "react";
 import "../styles/sass/_checkout-product.scss";
 import starIcon from "../images/icons/star.png";
+import { useAuth } from "../context/GlobalState";
 
 const CheckoutProduct = ({ id, title, image, price, rating }) => {
+  const { dispatch } = useAuth();
+
+  const removeFromBasket = () => {
+    dispatch({
+      type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
+
   return (
     <div className="checkoutProduct">
       <img
@@ -28,7 +38,7 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
             ))}
         </div>
 
-        <button>Remove from Basket</button>
+        <button onClick={removeFromBasket}>Remove from Basket</button>
       </div>
     </div>
   );
