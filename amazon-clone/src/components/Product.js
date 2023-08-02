@@ -4,7 +4,7 @@ import starIcon from "../images/icons/star.png";
 import { useAuth } from "../context/GlobalState";
 
 const Product = ({ id, title, price, image, rating }) => {
-  const { dispatch, basket } = useAuth();
+  const { dispatch } = useAuth();
 
   const addToBasket = () => {
     dispatch({
