@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/sass/_checkout.scss";
 import checkoutImg from "../images/checkoutAd.jpg";
 import { useAuth } from "../context/GlobalState";
 import CheckoutProduct from "./CheckoutProduct";

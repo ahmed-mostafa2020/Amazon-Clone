@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/sass/_home.scss";
 import homeImg from "../images/home.jpg";
 import Product from "./Product";
 import shortid from "shortid";

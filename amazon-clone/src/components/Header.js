@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/sass/_header.scss";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/GlobalState";
 import Logo from "../images/header-logo.png";

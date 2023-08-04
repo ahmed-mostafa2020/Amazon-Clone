@@ -1,14 +1,31 @@
-import React from "react";
-import "../styles/sass/_payment.scss";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/GlobalState";
 import CheckoutProduct from "./CheckoutProduct";
 import { getBasketTotal } from "../context/AppReducer";
 import CurrencyFormat from "react-currency-format";
 import { CardElement } from "@stripe/react-stripe-js";
+import axios from "./axios";
 
 const Payment = () => {
   const { basket, user } = useAuth();
+
+  // State to save clientSecret in
+  const [clientSecret, setClientSecret] = useState();
+
+  useEffect(() => {
+    const getClientSecret = async () => {
+      const response = await axios({
+        method: "post",
+        url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+      });
+
+      setClientSecret(response.data.clientSecret);
+      return response;
+    };
+
+    getClientSecret();
+  }, [basket]);
 
   const handleChange = () => {};
 

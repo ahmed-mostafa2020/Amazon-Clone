@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/sass/_subtotal.scss";
 import CurrencyFormat from "react-currency-format";
 import { useAuth } from "../context/GlobalState";
 import { getBasketTotal } from "../context/AppReducer";

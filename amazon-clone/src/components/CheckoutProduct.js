@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/sass/_checkout-product.scss";
 import starIcon from "../images/icons/star.png";
 import { useAuth } from "../context/GlobalState";
 
