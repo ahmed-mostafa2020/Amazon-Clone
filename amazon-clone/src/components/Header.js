@@ -8,6 +8,7 @@ import { auth } from "../firebase";
 
 const Header = () => {
   const { user, basket } = useAuth();
+
   const handleAuthentication = () => {
     auth.signOut();
   };
