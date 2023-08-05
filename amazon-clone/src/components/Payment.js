@@ -6,6 +6,8 @@ import { getBasketTotal } from "../context/AppReducer";
 import CurrencyFormat from "react-currency-format";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import axios from "./axios";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 const Payment = () => {
   const { basket, user, dispatch } = useAuth();
@@ -56,12 +58,22 @@ const Payment = () => {
         },
       })
       .then(({ paymentIntent }) => {
+        // Payment OK is already successful
+        const ref = doc(db, "users", user?.uid, "orders", paymentIntent.id);
+
+        setDoc(ref, {
+          basket: basket,
+          amount: paymentIntent.amount,
+          created: paymentIntent.created,
+        });
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
         dispatch({
           type: "EMPTY_BASKET",
         });
+
         navigate("/orders", { replace: true });
       });
   };
