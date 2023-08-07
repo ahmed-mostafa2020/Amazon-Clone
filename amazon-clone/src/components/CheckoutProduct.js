@@ -2,7 +2,7 @@ import React from "react";
 import starIcon from "../images/icons/star.png";
 import { useAuth } from "../context/GlobalState";
 
-const CheckoutProduct = ({ id, title, image, price, rating }) => {
+const CheckoutProduct = ({ id, title, image, price, rating, hiddenButton }) => {
   const { dispatch } = useAuth();
 
   const removeFromBasket = () => {
@@ -37,7 +37,9 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
             ))}
         </div>
 
-        <button onClick={removeFromBasket}>Remove from Basket</button>
+        {!hiddenButton && (
+          <button onClick={removeFromBasket}>Remove from Basket</button>
+        )}
       </div>
     </div>
   );
