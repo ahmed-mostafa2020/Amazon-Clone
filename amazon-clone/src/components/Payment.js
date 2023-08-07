@@ -59,6 +59,8 @@ const Payment = () => {
       })
       .then(({ paymentIntent }) => {
         // Payment OK is already successful
+        console.log(paymentIntent);
+
         const ref = doc(db, "users", user?.uid, "orders", paymentIntent.id);
 
         setDoc(ref, {

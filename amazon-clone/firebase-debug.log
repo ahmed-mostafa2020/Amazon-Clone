@@ -1,0 +1,25 @@
+[debug] [2023-08-07T11:15:45.826Z] ----------------------------------------------------------------------
+[debug] [2023-08-07T11:15:45.830Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LAPCOMstore\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-08-07T11:15:45.830Z] CLI Version:   12.4.5
+[debug] [2023-08-07T11:15:45.831Z] Platform:      win32
+[debug] [2023-08-07T11:15:45.831Z] Node Version:  v18.16.0
+[debug] [2023-08-07T11:15:45.832Z] Time:          Mon Aug 07 2023 13:15:45 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-08-07T11:15:45.832Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-07T11:15:46.057Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-07T11:15:46.058Z] > authorizing via signed-in user (ahmostafa054@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-08-07T11:15:46.076Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-07T11:15:46.077Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2023-08-07T11:15:46.080Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-08-07T11:15:46.109Z] [hub] writing locator at C:\Users\LAPCOM~1\AppData\Local\Temp\hub-clone-88110.json
+[debug] [2023-08-07T11:15:46.152Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-07T11:15:46.152Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-07T11:15:46.153Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-08-07T11:15:46.159Z] defaultcredentials: writing to file C:\Users\LAPCOMstore\AppData\Roaming\firebase\ahmostafa054_gmail_com_application_default_credentials.json
+[debug] [2023-08-07T11:15:46.164Z] Setting GAC to C:\Users\LAPCOMstore\AppData\Roaming\firebase\ahmostafa054_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\LAPCOMstore\\AppData\\Roaming\\firebase\\ahmostafa054_gmail_com_application_default_credentials.json"}}
+[debug] [2023-08-07T11:15:46.166Z] > refreshing access token with scopes: []
+[debug] [2023-08-07T11:15:46.168Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-07T11:15:46.168Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
