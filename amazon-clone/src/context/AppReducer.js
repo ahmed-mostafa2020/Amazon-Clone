@@ -9,6 +9,7 @@ export const getBasketTotal = (basket) => {
 export const initialState = {
   basket: [],
   user: null,
+  favorites: [],
 };
 
 const AppReducer = (state = initialState, action) => {
@@ -49,6 +50,33 @@ const AppReducer = (state = initialState, action) => {
       return {
         ...state,
         basket: newBasket,
+      };
+
+    case "ADD_TO_FAVORITES":
+      return {
+        ...state,
+        favorites: [...state.favorites, action.item],
+      };
+
+    case "REMOVE_FROM_FAVORITES":
+      // To return deleted item index
+      const indexedItem = state.favorites?.findIndex(
+        (item) => item.id === action.id
+      );
+
+      let newFavorites = [...state.favorites];
+
+      if (indexedItem >= 0) {
+        newFavorites.splice(indexedItem, 1);
+      } else {
+        console.warn(
+          `can't remove product {id ${action.id} as it's not in basket!`
+        );
+      }
+
+      return {
+        ...state,
+        favorites: newFavorites,
       };
 
     default:

@@ -10,6 +10,7 @@ import Payment from "./components/Payment";
 import Orders from "./components/Orders";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Favorites from "./components/Favorites";
 
 const App = () => {
   const { dispatch } = useAuth();
@@ -75,6 +76,16 @@ const App = () => {
             <>
               <Header />
               <Orders />
+            </>
+          }
+        />
+
+        <Route
+          path="/favorites"
+          element={
+            <>
+              <Header />
+              <Favorites />
             </>
           }
         />

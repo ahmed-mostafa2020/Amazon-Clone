@@ -13,7 +13,12 @@ const GlobalProvider = ({ children }) => {
   return (
     <GlobalContext.Provider
       // Values provider will provide
-      value={{ basket: state.basket, user: state.user, dispatch: dispatch }}
+      value={{
+        basket: state.basket,
+        user: state.user,
+        favorites: state.favorites,
+        dispatch: dispatch,
+      }}
     >
       {children}
     </GlobalContext.Provider>

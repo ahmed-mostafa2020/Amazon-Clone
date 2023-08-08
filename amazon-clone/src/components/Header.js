@@ -7,7 +7,7 @@ import shoppingCart from "../images/icons/shopping-cart.png";
 import { auth } from "../firebase";
 
 const Header = () => {
-  const { user, basket } = useAuth();
+  const { user, basket, favorites } = useAuth();
 
   const handleAuthentication = () => {
     auth.signOut();
@@ -43,10 +43,19 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="header-option">
+        {/* <div className="header-option">
           <span className="header-optionLineOne">Your</span>
           <span className="header-optionLineTwo">Prime</span>
-        </div>
+        </div> */}
+
+        <Link to="/favorites">
+          <div className="header-option">
+            <span className="header-optionLineOne">
+              Your <span> ({favorites?.length})</span>
+            </span>
+            <span className="header-optionLineTwo">Favorites</span>
+          </div>
+        </Link>
 
         <Link to="/checkout">
           <div className="header-optionBasket">
