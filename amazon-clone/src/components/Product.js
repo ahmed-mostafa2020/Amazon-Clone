@@ -41,7 +41,11 @@ const Product = ({ id, title, price, image, rating }) => {
   return (
     <div className="product">
       <div className="favorite">
-        <button className="test" onClick={addToFavorite} disabled={disabled}>
+        <button
+          className="heart-container"
+          onClick={addToFavorite}
+          disabled={disabled}
+        >
           {clicked ? (
             <AiFillHeart className="favorite-icon" />
           ) : (
