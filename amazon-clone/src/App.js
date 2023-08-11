@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Login from "./components/Login";
+import Login from "./pages/Login";
 import { auth } from "./firebase";
 import { useAuth } from "./context/GlobalState";
-import Home from "./components/Home";
-import Checkout from "./components/Checkout";
+import Home from "./pages/Home";
+import Checkout from "./pages/Checkout";
 import Payment from "./components/Payment";
-import Orders from "./components/Orders";
+import Orders from "./pages/Orders";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Favorites from "./components/Favorites";
 import NavShop from "./components/NavShop";
+import Shoes from "./pages/Shoes";
 
 const App = () => {
   const { dispatch } = useAuth();
@@ -90,7 +91,19 @@ const App = () => {
           element={
             <>
               <Header />
+              <NavShop />
               <Favorites />
+            </>
+          }
+        />
+
+        <Route
+          path="/shoes"
+          element={
+            <>
+              <Header />
+              <NavShop />
+              <Shoes />
             </>
           }
         />

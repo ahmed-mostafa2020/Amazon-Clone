@@ -1,98 +1,23 @@
-[debug] [2023-08-08T12:38:14.683Z] ----------------------------------------------------------------------
-[debug] [2023-08-08T12:38:14.685Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LAPCOMstore\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
-[debug] [2023-08-08T12:38:14.685Z] CLI Version:   12.4.5
-[debug] [2023-08-08T12:38:14.686Z] Platform:      win32
-[debug] [2023-08-08T12:38:14.686Z] Node Version:  v18.16.0
-[debug] [2023-08-08T12:38:14.687Z] Time:          Tue Aug 08 2023 14:38:14 GMT+0200 (Eastern European Standard Time)
-[debug] [2023-08-08T12:38:14.687Z] ----------------------------------------------------------------------
+[debug] [2023-08-11T15:08:53.364Z] ----------------------------------------------------------------------
+[debug] [2023-08-11T15:08:53.366Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LAPCOMstore\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --debug
+[debug] [2023-08-11T15:08:53.367Z] CLI Version:   12.4.5
+[debug] [2023-08-11T15:08:53.367Z] Platform:      win32
+[debug] [2023-08-11T15:08:53.368Z] Node Version:  v18.16.0
+[debug] [2023-08-11T15:08:53.369Z] Time:          Fri Aug 11 2023 17:08:53 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-08-11T15:08:53.369Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-08-08T12:38:14.691Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2023-08-08T12:38:14.845Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-08-08T12:38:14.846Z] > authorizing via signed-in user (ahmostafa054@gmail.com)
-[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2023-08-08T12:38:14.866Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T15:08:53.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-11T15:08:53.547Z] > authorizing via signed-in user (ahmostafa054@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-08-11T15:08:53.590Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T15:08:53.591Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
 [warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
-[debug] [2023-08-08T12:38:14.867Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2023-08-08T12:38:14.881Z] [hub] writing locator at C:\Users\LAPCOM~1\AppData\Local\Temp\hub-clone-88110.json
-[debug] [2023-08-08T12:38:14.905Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-08-08T12:38:14.905Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-08-08T12:38:14.905Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
-[debug] [2023-08-08T12:38:14.909Z] defaultcredentials: writing to file C:\Users\LAPCOMstore\AppData\Roaming\firebase\ahmostafa054_gmail_com_application_default_credentials.json
-[debug] [2023-08-08T12:38:14.913Z] Setting GAC to C:\Users\LAPCOMstore\AppData\Roaming\firebase\ahmostafa054_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\LAPCOMstore\\AppData\\Roaming\\firebase\\ahmostafa054_gmail_com_application_default_credentials.json"}}
-[debug] [2023-08-08T12:38:14.914Z] > refreshing access token with scopes: []
-[debug] [2023-08-08T12:38:14.915Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2023-08-08T12:38:14.915Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2023-08-08T12:38:15.701Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2023-08-08T12:38:15.702Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2023-08-08T12:38:15.720Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-88110/adminSdkConfig [none]
-[debug] [2023-08-08T12:38:15.768Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2023-08-08T12:38:15.768Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
-[debug] [2023-08-08T12:38:16.558Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-88110/adminSdkConfig 200
-[debug] [2023-08-08T12:38:16.559Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-88110/adminSdkConfig {"projectId":"clone-88110","storageBucket":"clone-88110.appspot.com"}
-[debug] [2023-08-08T12:38:16.667Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2023-08-08T12:38:16.667Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2023-08-08T12:38:16.667Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\LAPCOMstore\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\LAPCOMstore\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
-[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2023-08-08T12:38:16.933Z] Web / API server started at 127.0.0.1:4001
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
-[debug] [2023-08-08T12:38:16.934Z] Web / API server started at ::1:4001
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
-[info] i  functions: Watching "G:\AhmEd MoStafa\programming\Training Projects\Amazon Clone\Amazon-Clone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"G:\\AhmEd MoStafa\\programming\\Training Projects\\Amazon Clone\\Amazon-Clone\\amazon-clone\\functions\" for Cloud Functions..."}}
-[debug] [2023-08-08T12:38:17.023Z] Validating nodejs source
-[debug] [2023-08-08T12:38:19.491Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "18"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "firebase-admin": "^11.8.0",
-    "firebase-functions": "^4.3.1",
-    "stripe": "^12.17.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.15.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^3.1.0"
-  },
-  "private": true
-}
-[debug] [2023-08-08T12:38:19.491Z] Building nodejs source
-[debug] [2023-08-08T12:38:19.491Z] Failed to find version of module node: reached end of search path G:\AhmEd MoStafa\programming\Training Projects\Amazon Clone\Amazon-Clone\amazon-clone\functions\node_modules
-[info] +  functions: Using node@18 from host. 
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2023-08-08T12:38:19.533Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-08-08T12:38:19.649Z] Found firebase-functions binary at 'G:\AhmEd MoStafa\programming\Training Projects\Amazon Clone\Amazon-Clone\amazon-clone\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8353
-
-[info] shutdown requested via /__/quitquitquit
-
-[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
-[info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://127.0.0.1:4001/               │
-└─────────────────────────────────────────────────────────────┘
-
-┌───────────┬────────────────┬─────────────────────────────────┐
-│ Emulator  │ Host:Port      │ View in Emulator UI             │
-├───────────┼────────────────┼─────────────────────────────────┤
-│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4001/functions │
-└───────────┴────────────────┴─────────────────────────────────┘
-  Emulator Hub running at 127.0.0.1:4400
-  Other reserved ports: 4500
-
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
+[debug] [2023-08-11T15:08:53.597Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-08-11T15:08:53.623Z] [hub] writing locator at C:\Users\LAPCOM~1\AppData\Local\Temp\hub-clone-88110.json
+[debug] [2023-08-11T15:08:53.671Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T15:08:53.671Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T15:08:53.672Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-08-11T15:08:53.684Z] defaultcredentials: writing to file C:\Users\LAPCOMstore\AppData\Roaming\firebase\ahmostafa054_gmail_com_application_default_credentials.json
+[debug] [2023-08-11T15:08:53.688Z] Setting GAC to C:\Users\LAPCOMstore\AppData\Roaming\firebase\ahmostafa054_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\LAPCOMstore\\AppData\\Roaming\\firebase\\ahmostafa054_gmail_com_application_default_credentials.json"}}
+[debug] [2023-08-11T15:08:53.694Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-88110/adminSdkConfig [none]

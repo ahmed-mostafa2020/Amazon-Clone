@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: #22303e;
+  position: sticky;
+  top: 60px;
+  z-index: 100;
 
   .links {
     display: flex;

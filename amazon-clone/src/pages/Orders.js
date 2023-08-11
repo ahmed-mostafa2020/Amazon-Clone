@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuth } from "../context/GlobalState";
 import { db } from "../firebase";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
-import Order from "./Order";
+import Order from "../components/Order";
 
 const Orders = () => {
   // State to save orders in

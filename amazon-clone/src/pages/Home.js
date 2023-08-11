@@ -1,6 +1,6 @@
 import React from "react";
 import homeImg from "../images/home.jpg";
-import Product from "./Product";
+import Product from "../components/Product";
 import shortid from "shortid";
 import productImg1 from "../images/products/1.png";
 import productImg2 from "../images/products/2.png";

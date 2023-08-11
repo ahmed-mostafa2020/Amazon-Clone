@@ -1,8 +1,8 @@
 import React from "react";
 import checkoutImg from "../images/checkoutAd.jpg";
 import { useAuth } from "../context/GlobalState";
-import CheckoutProduct from "./CheckoutProduct";
-import Subtotal from "./Subtotal";
+import CheckoutProduct from "../components/CheckoutProduct";
+import Subtotal from "../components/Subtotal";
 
 const Checkout = () => {
   const { user, basket } = useAuth();
