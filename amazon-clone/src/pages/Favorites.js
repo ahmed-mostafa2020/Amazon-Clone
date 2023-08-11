@@ -1,7 +1,7 @@
 import React from "react";
 import checkoutImg from "../images/checkoutAd.jpg";
 import { useAuth } from "../context/GlobalState";
-import FavoritesProduct from "./FavoritesProduct";
+import FavoritesProduct from "../components/FavoritesProduct";
 
 const Favorites = () => {
   const { user, favorites } = useAuth();

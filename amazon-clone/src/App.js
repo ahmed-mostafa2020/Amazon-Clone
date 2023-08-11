@@ -10,7 +10,7 @@ import Payment from "./components/Payment";
 import Orders from "./pages/Orders";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import Favorites from "./components/Favorites";
+import Favorites from "./pages/Favorites";
 import NavShop from "./components/NavShop";
 import Shoes from "./pages/Shoes";
 

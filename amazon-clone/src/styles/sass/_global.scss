@@ -12,6 +12,16 @@
 @import "orders";
 @import "order";
 @import "nav-shop";
+@import "shoes";
+
+@import "nav";
+@import "recommended";
+@import "button";
+@import "sidebar";
+@import "category";
+@import "_price";
+@import "_color";
+@import "card";
 
 * {
   box-sizing: border-box;
@@ -33,9 +43,7 @@ figure,
 footer,
 header,
 hgroup,
-menu,
-nav,
-section {
+menu {
   display: block;
 }
 ol,
