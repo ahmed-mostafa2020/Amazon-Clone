@@ -1,16 +1,17 @@
-@import "_colors";
-@import "_vars";
+@import "colors";
+@import "vars";
 
-@import "_header";
-@import "_login";
-@import "_home";
-@import "_product";
-@import "_checkout";
-@import "_checkout-product";
-@import "_subtotal";
-@import "_payment";
-@import "_orders";
-@import "_order";
+@import "header";
+@import "login";
+@import "home";
+@import "product";
+@import "checkout";
+@import "checkout-product";
+@import "subtotal";
+@import "payment";
+@import "orders";
+@import "order";
+@import "nav-shop";
 
 * {
   box-sizing: border-box;

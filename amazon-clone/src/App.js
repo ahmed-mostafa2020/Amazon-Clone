@@ -11,6 +11,7 @@ import Orders from "./components/Orders";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Favorites from "./components/Favorites";
+import NavShop from "./components/NavShop";
 
 const App = () => {
   const { dispatch } = useAuth();
@@ -41,6 +42,7 @@ const App = () => {
           element={
             <>
               <Header />
+              <NavShop />
               <Home />
             </>
           }
@@ -53,6 +55,7 @@ const App = () => {
           element={
             <>
               <Header />
+              <NavShop />
               <Checkout />
             </>
           }
@@ -63,6 +66,7 @@ const App = () => {
           element={
             <>
               <Header />
+              <NavShop />
               <Elements stripe={stripePromise}>
                 <Payment />
               </Elements>
@@ -75,6 +79,7 @@ const App = () => {
           element={
             <>
               <Header />
+              <NavShop />
               <Orders />
             </>
           }

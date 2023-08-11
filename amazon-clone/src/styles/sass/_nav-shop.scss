@@ -1,0 +1,36 @@
+.nav-shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22303e;
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    flex: 1;
+
+    a {
+      color: #fff;
+      padding: 10px 7px;
+      border: 1px solid transparent;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  .buy-now {
+    height: 40px;
+    flex: 1;
+
+    img {
+      height: 100%;
+    }
+  }
+}
