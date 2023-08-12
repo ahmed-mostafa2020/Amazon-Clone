@@ -87,13 +87,13 @@ const Shoes = () => {
     }
 
     return filteredProducts.map(
-      ({ id, image, title, star, reviews, prevPrice, newPrice }) => (
+      ({ id, image, title, rating, reviews, prevPrice, newPrice }) => (
         <Card
           key={Math.random()}
           id={id}
           image={image}
           title={title}
-          star={star}
+          rating={rating}
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}

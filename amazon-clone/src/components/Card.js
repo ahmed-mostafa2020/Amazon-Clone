@@ -1,31 +1,33 @@
-import { BsFillBagFill } from "react-icons/bs";
 import starIcon from "../images/icons/star.png";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { useAuth } from "../context/GlobalState";
 
-const Card = ({ id, image, title, star, reviews, prevPrice, newPrice }) => {
+const Card = ({ id, image, title, rating, reviews, prevPrice, newPrice }) => {
+  const { dispatch } = useAuth();
+
+  const addToBasket = (e) => {
+    e.preventDefault();
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        price: newPrice,
+        image: image,
+        rating: rating,
+      },
+    });
+  };
+
   return (
     <>
       <section className="card">
-        {/* <div className="favorite">
-        <button
-          className="heart-container"
-          onClick={addToFavorite}
-          disabled={disabled}
-        >
-          {clicked ? (
-            <AiFillHeart className="favorite-icon" />
-          ) : (
-            <AiOutlineHeart className="favorite-icon" />
-          )}
-        </button>
-      </div> */}
-
         <img src={image} alt={title} className="card-img" />
         <div className="card-details">
           <h3 className="card-title">{title}</h3>
           <section className="card-reviews">
             <div className="product-rating">
-              {Array(star)
+              {Array(rating)
                 .fill()
                 .map((_, i) => (
                   <p key={i}>
@@ -40,7 +42,7 @@ const Card = ({ id, image, title, star, reviews, prevPrice, newPrice }) => {
             <div className="price">
               <del>{prevPrice}</del> {newPrice}
             </div>
-            <button className="cart-button">
+            <button className="cart-button" onClick={addToBasket}>
               <AiOutlineShoppingCart className="cart-icon" />
             </button>
           </section>
