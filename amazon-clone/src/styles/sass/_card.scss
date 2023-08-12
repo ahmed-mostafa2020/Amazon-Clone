@@ -71,8 +71,18 @@
       align-items: center;
     }
 
-    .bag-icon {
-      color: #535353;
+    .cart-button {
+      background-color: transparent;
+      border: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover .cart-icon {
+        color: #cd9042;
+      }
+      .cart-icon {
+        color: #535353;
+        font-size: 22px;
+      }
     }
   }
 }

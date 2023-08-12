@@ -1,5 +1,6 @@
 import { BsFillBagFill } from "react-icons/bs";
 import starIcon from "../images/icons/star.png";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Card = ({ id, image, title, star, reviews, prevPrice, newPrice }) => {
   return (
@@ -39,9 +40,9 @@ const Card = ({ id, image, title, star, reviews, prevPrice, newPrice }) => {
             <div className="price">
               <del>{prevPrice}</del> {newPrice}
             </div>
-            <div className="bag">
-              <BsFillBagFill className="bag-icon" />
-            </div>
+            <button className="cart-button">
+              <AiOutlineShoppingCart className="cart-icon" />
+            </button>
           </section>
         </div>
       </section>
