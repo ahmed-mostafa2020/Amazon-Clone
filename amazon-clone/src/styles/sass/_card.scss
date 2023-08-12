@@ -10,11 +10,6 @@
     border: 2px solid #ededed;
     padding: 20px;
     cursor: pointer;
-    // display: flex;
-    // justify-content: center;
-    // align-items: flex-start;
-    // flex-wrap: wrap;
-    // flex-direction: column;
     transition: all 0.2s ease-in-out;
 
     &:hover {
@@ -23,6 +18,28 @@
 
     &:hover .card-img {
       transform: scale(1.05);
+    }
+
+    .favorite {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -5px;
+      margin-bottom: 5px;
+
+      button.heart-container {
+        background-color: transparent;
+        border: none;
+      }
+
+      .favorite-icon {
+        font-size: 20px;
+        color: rgb(212, 5, 5);
+        transition: all 0.15s ease-in;
+        &:hover {
+          color: red;
+        }
+      }
     }
 
     .card-img {
